@@ -11,3 +11,24 @@ function render() {
 $(document).ready(function () {
   render();
 });
+
+// Edit Completed Function
+function editCompleted(itemId) {
+  items = $.map(items, function (item) {
+    if (item.id === itemId) {
+      return $.extend({}, item, { completed: !item.completed });
+    }
+    return item;
+  });
+  render();
+}
+//Remove item
+function removeItem(itemId) {
+  items = $.grep(items, function (item) {
+    return item.id !== itemId;
+  });
+  render();
+  setTimeout(function () {
+    alert("Item Deleted Successfully!");
+  }, 0);
+}
