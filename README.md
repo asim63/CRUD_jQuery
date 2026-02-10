@@ -36,10 +36,7 @@ The project focuses on understanding **DOM manipulation using jQuery**, modular 
 
 ## Project Structure
 
----
-
-## File Description
-
+```
 CRUD_JQUERY/
 │
 ├── css/
@@ -60,6 +57,7 @@ CRUD_JQUERY/
 ├── index.html
 ├── LICENSE
 └── README.md
+```
 
 ### index.html
 
