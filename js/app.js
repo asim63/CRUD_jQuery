@@ -46,9 +46,9 @@ function addItem(itemName) {
   items.push(newItem);
   setLocalStorage(items);
   render();
-  setTimeout(function () {
-    alert("Item Added Successfully!");
-  }, 0);
+  // setTimeout(function () {
+  //   alert("Item Added Successfully!");
+  // }, 0);
 }
 
 // Edit Completed Function
@@ -69,9 +69,9 @@ function removeItem(itemId) {
   });
   setLocalStorage(items);
   render();
-  setTimeout(function () {
-    alert("Item Deleted Successfully!");
-  }, 0);
+  // setTimeout(function () {
+  //   alert("Item Deleted Successfully!");
+  // }, 0);
 }
 
 // Update Item Name Function
@@ -85,9 +85,9 @@ function updateItemName(newName) {
   editId = null;
   setLocalStorage(items);
   render();
-  setTimeout(function () {
-    alert("Item Updated Successfully!");
-  }, 0);
+  // setTimeout(function () {
+  //   alert("Item Updated Successfully!");
+  // }, 0);
 }
 
 // Set Edit ID Function
