@@ -2,7 +2,7 @@ function createForm(editId, itemToEdit) {
   var $form = $("<form></form>");
 
   $form.html(`
-        <h2>grocery list helper</h2>
+        <h2 class="form-title">grocery list helper</h2>
         <div class ='form-control'>
         <input
         type = "text"
@@ -10,7 +10,7 @@ function createForm(editId, itemToEdit) {
         placeholder = "e.g. eggs"
         value="${itemToEdit ? itemToEdit.name : ""}"
         />
-        <button type ="submit" class = "btn">
+        <button type ="submit" class ="form-button">
          ${editId ? "edit item" : "add item"}
         </button>
         </div>
